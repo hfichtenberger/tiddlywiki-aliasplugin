@@ -1,0 +1,14 @@
+{
+	"description": "Wrapper for alias plugin",
+	"plugins": [
+		"hf64/alias"
+	],
+	"themes": [
+		"tiddlywiki/vanilla"
+	],
+	"build": {
+		"index": [
+			"--rendertiddler","$:/core/save/all","aliaswrapper.html","text/plain"
+		]
+	}
+}

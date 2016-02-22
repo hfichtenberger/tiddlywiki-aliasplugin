@@ -1,0 +1,25 @@
+title: $:/plugins/hf64/alias/readme
+
+!! General
+
+Provides a macro that searches for tiddlers with a field called `alias` and
+creates a link to the first tiddler with the given alias it finds (multiple
+aliases can be separated by ";"). It is also possible to hide the link if no
+tiddler was found.
+
+!! Usage
+
+`<<alias the_alias text smartlink>>`
+
+|''Parameter'' |''Value''   |''Description''                                                                                   |
+|the_alias     |String      |Alias of the tiddler that shall be linked to                                                      |
+|text          |String      |Text to display (optional, default is tiddler's title)                                            |
+|smartlink     |true, false |If true, //text// is displayed without link when no tiddler is found (optional, default is false) |
+
+!! Examples
+
+```
+<<alias "shortid">>
+<<alias "shortid" "click here">>
+<<alias "shortid" "click here" true>>
+```
