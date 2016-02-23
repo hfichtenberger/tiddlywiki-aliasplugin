@@ -14,7 +14,7 @@ on a terminal. The wrapper wiki will be saved to `editions/aliaswrapper/output`.
 
 # Project Information
 Currently, this project is maintained at:
-https://bitbucket.org/hfichtenberger/tiddlywiki-aliasplugin
+https://github.com/hfichtenberger/tiddlywiki-aliasplugin
 
 # License
 Copyright 2016 Hendrik Fichtenberger
