@@ -5,12 +5,13 @@ by an alternative identifier called *alias* instead of its title. One or
 multiple aliases can be entered as a custom field *alias* of a tiddler.
 
 # Files in This Repository
-The contents of this repository can be copied to a TiddlyWiki 5 root directory.
-It is then possible to build a wrapper wiki by running
+The contents of this repository can be copied into a TiddlyWiki 5 repository's
+root directory. It is then possible to build a wrapper wiki by running
 
-    node ./tiddlywiki.js editions/aliaspackage --build index
+    node ./tiddlywiki.js editions/aliaswrapper --build index
 
-on a terminal. The wrapper wiki will be saved to `editions/aliaswrapper/output`.
+on a terminal. The wrapper wiki will be saved to
+`./editions/aliaswrapper/output/aliaswrapper.html`.
 
 # Project Information
 Currently, this project is maintained at:
