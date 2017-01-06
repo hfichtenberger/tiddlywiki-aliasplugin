@@ -18,7 +18,7 @@ Currently, this project is maintained at:
 https://github.com/hfichtenberger/tiddlywiki-aliasplugin
 
 # License
-Copyright 2016 Hendrik Fichtenberger
+Copyright 2016-2017 Hendrik Fichtenberger
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

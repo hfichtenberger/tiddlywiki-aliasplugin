@@ -2,7 +2,7 @@
     "title": "$:/plugins/hf64/alias",
     "description": "Alias plugin",
     "author": "Hendrik Fichtenberger",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "core-version": ">=5.0.0",
     "source": "https://bitbucket.org/hfichtenberger/tiddlywiki_alias",
     "plugin-type": "plugin",

@@ -3,7 +3,7 @@ title: $:/plugins/hf64/alias/alias.js
 type: application/javascript
 module-type: macro
 
-Copyright 2016 Hendrik Fichtenberger
+Copyright 2016-2017 Hendrik Fichtenberger
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -37,12 +37,12 @@ exports.params = [
 Run the macro
 */
 exports.run = function(alias, text, smartlink) {
-	if( !alias) {
-    return "ERROR: No alias provided to AliasMacro";
-  }
+	if( !alias ) {
+		return "ERROR: No alias provided to AliasMacro";
+	}
 	var tiddlers = $tw.wiki.getTiddlers();
 	var match = "";
-  for(var t = 0; t < tiddlers.length; t++) {
+	for(var t = 0; t < tiddlers.length; t++) {
 		var tiddler = $tw.wiki.getTiddler(tiddlers[t]);
 		if( tiddler.fields["alias"] ) {
 			var aliases = tiddler.fields["alias"].split(";");
@@ -51,14 +51,26 @@ exports.run = function(alias, text, smartlink) {
 			}
 		}
 	}
-	if( !match && smartlink ) {
-		return text;
-	}
-	else if( !text) {
-		return "[[" + match + "]]";
+	if ( match ) {
+		if( text ) {
+			return "[[" + text + "|" + match + "]]";
+		}
+		else {
+			return "[[" + match + "]]";
+		}
 	}
 	else {
-		return "[[" + text + "|" + match + "]]";
+		if ( smartlink === "false" ) {
+			return "";
+		}
+		else {
+			if ( text ) {
+				return text;
+			}
+			else {
+				return alias;
+			}
+		}
 	}
 };
 

@@ -14,12 +14,12 @@ tiddler was found.
 |''Parameter'' |''Value''   |''Description''                                                                                   |
 |the_alias     |String      |Alias of the tiddler that shall be linked to                                                      |
 |text          |String      |Text to display (optional, default is tiddler's title)                                            |
-|smartlink     |true, false |If true, //text// is displayed without link when no tiddler is found (optional, default is false) |
+|smartlink     |true, false |If true, //text// is displayed without link when no tiddler is found (optional, default is true)  |
 
 !! Examples
 
 ```
 <<alias "shortid">>
 <<alias "shortid" "click here">>
-<<alias "shortid" "click here" true>>
+<<alias "shortid" "click here" false>>
 ```
